@@ -130,19 +130,19 @@ func TestWarning(t *testing.T) {
 			name:   "Try to warning",
 			action: (*logist.Logist).Warning,
 			params: "warning",
-			result: []string{"warning"},
+			result: []string{"warning\n"},
 		},
 		{
 			name:   "Try to error",
 			action: (*logist.Logist).Error,
 			params: "error",
-			result: []string{"error"},
+			result: []string{"error\n"},
 		},
 		{
 			name:   "Try to fatal",
 			action: (*logist.Logist).Fatal,
 			params: "fatal",
-			result: []string{"fatal"},
+			result: []string{"fatal\n"},
 		},
 	}
 
