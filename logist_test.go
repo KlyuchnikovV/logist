@@ -42,37 +42,37 @@ func TestTrace(t *testing.T) {
 			name:   "Try to trace",
 			action: (*logist.Logist).Trace,
 			params: "trace",
-			result: []string{"trace"},
+			result: []string{"trace\n"},
 		},
 		{
 			name:   "Try to debug",
 			action: (*logist.Logist).Debug,
 			params: "debug",
-			result: []string{"debug"},
+			result: []string{"debug\n"},
 		},
 		{
 			name:   "Try to info",
 			action: (*logist.Logist).Info,
 			params: "info",
-			result: []string{"info"},
+			result: []string{"info\n"},
 		},
 		{
 			name:   "Try to warning",
 			action: (*logist.Logist).Warning,
 			params: "warning",
-			result: []string{"warning"},
+			result: []string{"warning\n"},
 		},
 		{
 			name:   "Try to error",
 			action: (*logist.Logist).Error,
 			params: "error",
-			result: []string{"error"},
+			result: []string{"error\n"},
 		},
 		{
 			name:   "Try to fatal",
 			action: (*logist.Logist).Fatal,
 			params: "fatal",
-			result: []string{"fatal"},
+			result: []string{"fatal\n"},
 		},
 	}
 
